@@ -1,0 +1,11 @@
+NETFLIX DATA ANALYSIS - KEY INSIGHTS
+========================================
+
+- Total titles analyzed: 1200
+- Movies: 827 (68.9%)
+- TV Shows: 373 (31.1%)
+- Top country by content: United States (336 titles)
+- Most common genre: Children & Family Movies (96 titles)
+- Peak content-addition year: 2026 (207 titles)
+- Average movie duration: 126 minutes
+- Most common rating: TV-MA (315 titles)

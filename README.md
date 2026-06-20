@@ -1,121 +1,144 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=600&lines=🎬+Netflix+Analytics+Project;Python+%2B+SQL+%2B+Power+BI;Data+Analytics+Portfolio" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=E50914&height=200&section=header&text=Netflix%20Analytics%20Dashboard&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Python%20%7C%20SQL%20%7C%20Power%20BI%20%7C%20Data%20Analytics&descAlignY=55&descAlign=50" width="100%"/>
 
 <br/>
 
-![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Pandas](https://img.shields.io/badge/Pandas-EDA-150458?style=for-the-badge&logo=pandas&logoColor=white)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=E50914&center=true&vCenter=true&width=600&lines=🎬+Netflix+Data+Analytics+Project;1%2C200+Titles+Analyzed+%F0%9F%93%8A;Python+%2B+SQL+%2B+Power+BI+%F0%9F%94%A5;Built+by+Thangamuthumari+M+%F0%9F%92%AA)](https://git.io/typing-svg)
 
 <br/>
 
-> **A complete end-to-end Data Analytics project** — Raw data → Python EDA → SQL insights → Power BI Dashboard
+<img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Power_BI-Dashboard-yellow?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/Pandas-EDA-purple?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/Seaborn-Charts-teal?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge"/>
+
+<br/><br/>
+
+> ### 🎯 A complete end-to-end Data Analytics pipeline
+> **Raw CSV → Python EDA → MySQL Database → SQL Insights → Power BI Dashboard**
 
 </div>
 
 ---
 
-## 📊 Project Stats
+## 🚀 Project Highlights
 
 <div align="center">
 
-| 📁 Dataset | 🐍 Visualizations | 🗄️ SQL Queries | 🌍 Countries |
-|:---:|:---:|:---:|:---:|
-| **1,200 titles** | **7 charts** | **10 queries** | **16 regions** |
+| 🎬 | 📊 | 🗄️ | 🌍 | ⏱️ | 🔥 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **1,200** | **7** | **10** | **16** | **126 min** | **3** |
+| Titles | Charts | SQL Queries | Countries | Avg Duration | Tools |
 
 </div>
 
 ---
 
-## 🎯 Key Insights
+## 📌 Key Insights
 
 ```
-📌 68.9% Movies  |  31.1% TV Shows
-🌎 United States leads with 336 titles
-🎭 Top Genre: Children & Family Movies (96 titles)
-⏱️  Avg Movie Duration: 126 minutes
-📈 Peak Year: 2026 — 207 new titles added
-🔞 Most Common Rating: TV-MA
+╔══════════════════════════════════════════════════════════╗
+║  🎬  Movies      →  827 titles  (68.9%)                 ║
+║  📺  TV Shows    →  373 titles  (31.1%)                  ║
+║  🌎  Top Country →  United States (336 titles)           ║
+║  🎭  Top Genre   →  Children & Family Movies (96 titles) ║
+║  📅  Peak Year   →  2026  (207 new titles added)         ║
+║  ⭐  Top Rating  →  TV-MA (315 titles)                   ║
+║  ⏱️  Avg Movie   →  126 minutes                          ║
+╚══════════════════════════════════════════════════════════╝
 ```
 
 ---
 
 ## 🔄 Analytics Workflow
 
-```
-🗂️  Raw Data (CSV)
-      ↓
-🐍  Python — Pandas (Data Cleaning + EDA + 7 Visualizations)
-      ↓
-🗄️  MySQL — 10 SQL Queries (Aggregations, Window Functions, LAG())
-      ↓
-📊  Power BI — Interactive Dashboard (KPI Cards, Donut Chart, Bar Charts)
-      ↓
-💡  Key Business Insights
-```
+```mermaid
+flowchart LR
+    A[🗂️ Raw CSV\n1200 Records] --> B[🐍 Python EDA\nCleaning + Charts]
+    B --> C[🗄️ MySQL\n10 SQL Queries]
+    C --> D[📊 Power BI\nDashboard]
+    D --> E[💡 Insights\nDelivered]
 
----
-
-## 📂 Project Structure
-
-```
-netflix_project/
-├── 📁 data/
-│   ├── netflix_titles.csv              ← Raw dataset (1,200 records)
-│   └── netflix_titles_cleaned.csv      ← Cleaned dataset
-├── 📁 python/
-│   ├── generate_dataset.py             ← Dataset generation
-│   └── analysis.py                     ← EDA + 7 visualizations
-├── 📁 sql/
-│   └── netflix_analysis_queries.sql    ← 10 SQL analysis queries
-├── 📁 powerbi/
-│   └── POWERBI_GUIDE.md                ← Dashboard build guide
-├── 📁 docs/
-│   ├── 01_content_type_distribution.png
-│   ├── 02_top_countries.png
-│   ├── 03_yearly_trend.png
-│   ├── 04_top_genres.png
-│   ├── 05_rating_distribution.png
-│   ├── 06_movie_duration.png
-│   └── 07_tv_seasons.png
-└── README.md
+    style A fill:#1a1a2e,stroke:#E50914,color:#fff
+    style B fill:#16213e,stroke:#E50914,color:#fff
+    style C fill:#0f3460,stroke:#E50914,color:#fff
+    style D fill:#533483,stroke:#E50914,color:#fff
+    style E fill:#E50914,stroke:#c5070f,color:#fff
 ```
 
 ---
 
-## 🛠️ Tools & Technologies
+## 📁 Project Structure
 
-| Tool | Purpose |
-|------|---------|
-| 🐍 Python (Pandas, Matplotlib, Seaborn) | Data cleaning, EDA, visualizations |
-| 🗄️ MySQL + Workbench | Database creation, SQL analysis |
-| 📊 Power BI | Interactive dashboard, DAX measures |
-| 📁 CSV Dataset | 1,200 Netflix-style title records |
+```
+📦 netflix-analytics-project
+ ┣ 📂 data
+ ┃ ┣ 📄 netflix_titles.csv              ← Raw dataset
+ ┃ ┗ 📄 netflix_titles_cleaned.csv      ← Cleaned dataset
+ ┣ 📂 python
+ ┃ ┣ 🐍 generate_dataset.py             ← Dataset generation
+ ┃ ┗ 🐍 analysis.py                     ← EDA + 7 charts
+ ┣ 📂 sql
+ ┃ ┗ 🗄️ netflix_analysis_queries.sql    ← 10 SQL queries
+ ┣ 📂 powerbi
+ ┃ ┗ 📋 POWERBI_GUIDE.md                ← Dashboard guide
+ ┣ 📂 docs
+ ┃ ┣ 🖼️ 01_content_type_distribution.png
+ ┃ ┣ 🖼️ 02_top_countries.png
+ ┃ ┣ 🖼️ 03_yearly_trend.png
+ ┃ ┣ 🖼️ 04_top_genres.png
+ ┃ ┣ 🖼️ 05_rating_distribution.png
+ ┃ ┣ 🖼️ 06_movie_duration.png
+ ┃ ┗ 🖼️ 07_tv_seasons.png
+ ┗ 📄 README.md
+```
+
+---
+
+## 🛠️ Tools & Skills
+
+<div align="center">
+
+| 🐍 Python | 🗄️ SQL | 📊 Power BI |
+|:---:|:---:|:---:|
+| Pandas | MySQL 8.0 | DAX Measures |
+| Matplotlib | Window Functions | KPI Cards |
+| Seaborn | LAG() / Aggregations | Donut Charts |
+| Data Cleaning | Subqueries | Slicers |
+| EDA | JOIN / GROUP BY | Interactive Dashboard |
+
+</div>
 
 ---
 
 ## 🚀 How to Run
 
-### Python
+### 🐍 Python
 ```bash
+# Install dependencies
 pip install pandas numpy matplotlib seaborn
-python python/generate_dataset.py   # Generate dataset
-python python/analysis.py           # Run EDA + create charts
+
+# Generate dataset
+python python/generate_dataset.py
+
+# Run EDA + create 7 charts
+python python/analysis.py
 ```
 
-### SQL
+### 🗄️ SQL
 ```sql
--- 1. Create database
+-- Create database
 CREATE DATABASE netflix_db;
 USE netflix_db;
 
--- 2. Import netflix_titles_cleaned.csv
--- 3. Run sql/netflix_analysis_queries.sql
+-- Run queries from:
+-- sql/netflix_analysis_queries.sql
 ```
 
-### Power BI
+### 📊 Power BI
 ```
 1. Open Power BI Desktop
 2. Get Data → Text/CSV → netflix_titles_cleaned.csv
@@ -124,10 +147,9 @@ USE netflix_db;
 
 ---
 
-## 📈 Sample SQL Query
+## 📈 Sample SQL — Year over Year Growth
 
 ```sql
--- Year-over-year content growth
 WITH yearly AS (
     SELECT year_added, COUNT(*) AS total
     FROM netflix_titles
@@ -143,35 +165,30 @@ ORDER BY year_added;
 
 ---
 
-## 📸 Visualizations Preview
+## 📸 Charts Preview
 
-> Charts generated using Python (Matplotlib + Seaborn) — available in `/docs` folder
+> 7 visualizations generated using Python (Matplotlib + Seaborn)
 
-| Chart | Insight |
-|-------|---------|
-| 📊 Content Type Distribution | 68.9% Movies vs 31.1% TV Shows |
-| 🌍 Top Countries | US leads with 336 titles |
-| 📈 Yearly Trend | Platform growth 2008–2026 |
-| 🎭 Top Genres | Children & Family dominates |
-| ⭐ Rating Distribution | TV-MA most common |
-| ⏱️ Movie Duration | Avg 126 minutes |
-| 📺 TV Seasons | Season count breakdown |
-
----
-
-## 👤 Author
-
-<div align="center">
-
-**Thangamuthumari M**
-BCA Graduate | Aspiring Data Analyst / Full Stack Developer
-
-[![GitHub](https://img.shields.io/badge/GitHub-thangam2630-181717?style=for-the-badge&logo=github)](https://github.com/thangam2630)
-
-</div>
+| # | Chart | Insight |
+|---|-------|---------|
+| 01 | 🍩 Content Type Distribution | 68.9% Movies vs 31.1% TV Shows |
+| 02 | 🌍 Top Countries | US leads with 336 titles |
+| 03 | 📈 Yearly Trend | Growth from 2008 → 2026 |
+| 04 | 🎭 Top Genres | Children & Family dominates |
+| 05 | ⭐ Rating Distribution | TV-MA most common |
+| 06 | ⏱️ Movie Duration | Avg 126 min histogram |
+| 07 | 📺 TV Seasons | Season count breakdown |
 
 ---
 
 <div align="center">
-<sub>Built with ❤️ using Python, SQL & Power BI</sub>
+
+## 👩‍💻 Author
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=E50914&height=120&section=footer&text=Thangamuthumari%20M&fontSize=24&fontColor=ffffff&animation=fadeIn&fontAlignY=65&desc=BCA%20Graduate%20%7C%20Aspiring%20Data%20Analyst&descAlignY=85&descAlign=50" width="100%"/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-thangam2630-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thangam2630)
+
+**⭐ Star this repo if you found it useful!**
+
 </div>

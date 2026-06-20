@@ -1,97 +1,177 @@
-# 🎬 Netflix Movies & TV Shows - Data Analytics Project
+<div align="center">
 
-A complete data analytics project analyzing Netflix's content catalog using
-**Python**, **SQL**, and **Power BI** — covering data cleaning, exploratory
-data analysis, database querying, and interactive dashboard design.
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=E50914&center=true&vCenter=true&width=600&lines=🎬+Netflix+Analytics+Project;Python+%2B+SQL+%2B+Power+BI;Data+Analytics+Portfolio" alt="Typing SVG" />
+
+<br/>
+
+![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Pandas](https://img.shields.io/badge/Pandas-EDA-150458?style=for-the-badge&logo=pandas&logoColor=white)
+
+<br/>
+
+> **A complete end-to-end Data Analytics project** — Raw data → Python EDA → SQL insights → Power BI Dashboard
+
+</div>
 
 ---
 
-## 📌 Project Overview
+## 📊 Project Stats
 
-This project analyzes a Netflix titles dataset (1,200 records) to uncover
-patterns in content type, genre popularity, regional distribution, ratings,
-and platform growth over time. The goal is to simulate a real-world
-analytics workflow: **raw data → cleaning → analysis → SQL insights →
-visual dashboard**.
+<div align="center">
 
-## 🛠️ Tools & Technologies
-- **Python** — Pandas, Matplotlib, Seaborn (data cleaning + EDA)
-- **SQL** — MySQL/PostgreSQL compatible queries (insight extraction)
-- **Power BI** — Interactive dashboard & DAX measures
-- **Dataset** — Netflix-style catalog (show_id, type, title, director, cast,
-  country, date_added, release_year, rating, duration, listed_in, description)
+| 📁 Dataset | 🐍 Visualizations | 🗄️ SQL Queries | 🌍 Countries |
+|:---:|:---:|:---:|:---:|
+| **1,200 titles** | **7 charts** | **10 queries** | **16 regions** |
+
+</div>
+
+---
+
+## 🎯 Key Insights
+
+```
+📌 68.9% Movies  |  31.1% TV Shows
+🌎 United States leads with 336 titles
+🎭 Top Genre: Children & Family Movies (96 titles)
+⏱️  Avg Movie Duration: 126 minutes
+📈 Peak Year: 2026 — 207 new titles added
+🔞 Most Common Rating: TV-MA
+```
+
+---
+
+## 🔄 Analytics Workflow
+
+```
+🗂️  Raw Data (CSV)
+      ↓
+🐍  Python — Pandas (Data Cleaning + EDA + 7 Visualizations)
+      ↓
+🗄️  MySQL — 10 SQL Queries (Aggregations, Window Functions, LAG())
+      ↓
+📊  Power BI — Interactive Dashboard (KPI Cards, Donut Chart, Bar Charts)
+      ↓
+💡  Key Business Insights
+```
+
+---
 
 ## 📂 Project Structure
+
 ```
 netflix_project/
-├── data/
-│   ├── netflix_titles.csv              # Raw dataset
-│   └── netflix_titles_cleaned.csv      # Cleaned dataset (after Python processing)
-├── python/
-│   ├── generate_dataset.py             # Dataset generation script
-│   └── analysis.py                     # Data cleaning + EDA + visualizations
-├── sql/
-│   └── netflix_analysis_queries.sql    # 10 SQL analysis queries
-├── powerbi/
-│   └── POWERBI_GUIDE.md                # Step-by-step dashboard build guide
-├── docs/
+├── 📁 data/
+│   ├── netflix_titles.csv              ← Raw dataset (1,200 records)
+│   └── netflix_titles_cleaned.csv      ← Cleaned dataset
+├── 📁 python/
+│   ├── generate_dataset.py             ← Dataset generation
+│   └── analysis.py                     ← EDA + 7 visualizations
+├── 📁 sql/
+│   └── netflix_analysis_queries.sql    ← 10 SQL analysis queries
+├── 📁 powerbi/
+│   └── POWERBI_GUIDE.md                ← Dashboard build guide
+├── 📁 docs/
 │   ├── 01_content_type_distribution.png
 │   ├── 02_top_countries.png
 │   ├── 03_yearly_trend.png
 │   ├── 04_top_genres.png
 │   ├── 05_rating_distribution.png
 │   ├── 06_movie_duration.png
-│   ├── 07_tv_seasons.png
-│   └── key_insights.txt
+│   └── 07_tv_seasons.png
 └── README.md
 ```
 
-## 🔍 Key Insights
-- **68.9%** of the catalog is Movies, **31.1%** is TV Shows
-- **United States** leads content production, followed by India and the UK
-- **Children & Family Movies** is the most common genre
-- Content additions peaked in **2026**, showing strong platform growth
-- Average movie runtime is **~126 minutes**
-- **TV-MA** is the most common content rating, indicating a mature-audience skew
+---
 
-*(See `docs/key_insights.txt` for the full list)*
+## 🛠️ Tools & Technologies
 
-## 📊 Analysis Workflow
+| Tool | Purpose |
+|------|---------|
+| 🐍 Python (Pandas, Matplotlib, Seaborn) | Data cleaning, EDA, visualizations |
+| 🗄️ MySQL + Workbench | Database creation, SQL analysis |
+| 📊 Power BI | Interactive dashboard, DAX measures |
+| 📁 CSV Dataset | 1,200 Netflix-style title records |
 
-1. **Data Cleaning (Python)** — Handled missing values in `director` and
-   `country`, parsed `date_added` into proper datetime, extracted
-   `primary_genre`, `duration_minutes`, and `seasons` as separate fields.
-2. **Exploratory Data Analysis (Python)** — Generated 7 visualizations
-   covering content type split, country distribution, yearly trends,
-   genre popularity, rating breakdown, and duration analysis.
-3. **SQL Analysis** — Wrote 10 analytical queries including aggregations,
-   window functions (YoY growth using `LAG()`), and subqueries for
-   country/genre/director rankings.
-4. **Power BI Dashboard** — Built a 3-page interactive dashboard (Overview,
-   Genre & Rating Analysis, Deep Dive) with KPI cards, slicers, and DAX
-   measures. See `powerbi/POWERBI_GUIDE.md` for full build steps.
+---
 
-## 🚀 How to Run This Project
+## 🚀 How to Run
 
 ### Python
 ```bash
 pip install pandas numpy matplotlib seaborn
-python python/generate_dataset.py   # generates data/netflix_titles.csv
-python python/analysis.py           # cleans data + creates visualizations
+python python/generate_dataset.py   # Generate dataset
+python python/analysis.py           # Run EDA + create charts
 ```
 
 ### SQL
-1. Create the `netflix_titles` table using the schema in
-   `sql/netflix_analysis_queries.sql`
-2. Import `data/netflix_titles_cleaned.csv` into the table
-3. Run the analysis queries
+```sql
+-- 1. Create database
+CREATE DATABASE netflix_db;
+USE netflix_db;
+
+-- 2. Import netflix_titles_cleaned.csv
+-- 3. Run sql/netflix_analysis_queries.sql
+```
 
 ### Power BI
+```
 1. Open Power BI Desktop
-2. Import `data/netflix_titles_cleaned.csv`
-3. Follow `powerbi/POWERBI_GUIDE.md` for measures, visuals, and theming
+2. Get Data → Text/CSV → netflix_titles_cleaned.csv
+3. Follow powerbi/POWERBI_GUIDE.md
+```
+
+---
+
+## 📈 Sample SQL Query
+
+```sql
+-- Year-over-year content growth
+WITH yearly AS (
+    SELECT year_added, COUNT(*) AS total
+    FROM netflix_titles
+    GROUP BY year_added
+)
+SELECT
+    year_added,
+    total,
+    total - LAG(total) OVER (ORDER BY year_added) AS yoy_change
+FROM yearly
+ORDER BY year_added;
+```
+
+---
+
+## 📸 Visualizations Preview
+
+> Charts generated using Python (Matplotlib + Seaborn) — available in `/docs` folder
+
+| Chart | Insight |
+|-------|---------|
+| 📊 Content Type Distribution | 68.9% Movies vs 31.1% TV Shows |
+| 🌍 Top Countries | US leads with 336 titles |
+| 📈 Yearly Trend | Platform growth 2008–2026 |
+| 🎭 Top Genres | Children & Family dominates |
+| ⭐ Rating Distribution | TV-MA most common |
+| ⏱️ Movie Duration | Avg 126 minutes |
+| 📺 TV Seasons | Season count breakdown |
+
+---
 
 ## 👤 Author
-**Thangamuthumari (M Muthumari)**
+
+<div align="center">
+
+**Thangamuthumari M**
 BCA Graduate | Aspiring Data Analyst / Full Stack Developer
-[GitHub](https://github.com/thangam2630)
+
+[![GitHub](https://img.shields.io/badge/GitHub-thangam2630-181717?style=for-the-badge&logo=github)](https://github.com/thangam2630)
+
+</div>
+
+---
+
+<div align="center">
+<sub>Built with ❤️ using Python, SQL & Power BI</sub>
+</div>
